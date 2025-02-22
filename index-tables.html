@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ruth Iguta" />
+    <meta
+      name="description"
+      content="This page contains all the things I am learning how to create as I learn HTML."
+    />
+    <title>My first web page</title>
+    <link rel="icon" href="cutecat.jpeg" type="image/x-icon" />
+    <!--links relative reference/on the same server-->
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>My goals for the year</h1>
+
+      <hr />
+      <!--semantics html elements provide additional meaning plus makes page available to readers  nav-navigation-->
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li><a href="#html">Learning HTML</a> <br /></li>
+
+          <li>
+            <a href="#vacation">Planning Vacation</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+    <!--internal link/anchor link, directly to a portion of the page-->
+
+    <main>
+      <article id="html">
+        <!--article used intercheably with section. You can have diffrent sections inside of an article-->
+
+        <h2>I am ready to learn html</h2>
+        <p>This is my first web page.</p>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="img/html.jpeg"
+            alt="HTML 5 Logo"
+            title="I am learning how to add images in HTML 5"
+            width="250"
+            height="250"
+          />
+          <!--cummulitive layout shift-->
+          <!--you can put an url as a source for an image/placeholder-->
+          <figure>
+            <figcaption>An example of HTML5 code</figcaption>
+            <p>
+              <code>&lt;h1 &gt; Hello World! &lt;/h1 &gt;</code>
+              <!--code helps you display code-->
+            </p>
+          </figure>
+        </section>
+        <section>
+          <h3>My daily schedule</h3>
+          <p>Let me tell you how I....</p>
+          <ol>
+            <li>...I learn ,more about web dev</li>
+            <li>...I plan out my schedule</li>
+            <li>
+              ...I use resources from
+              <abbr title="Moxilla Developer Network">
+                <a href="https://developer.mozilla.org/">MDN</a
+                ><!--links(specific/absolute reference)--> </abbr
+              >.
+            </li>
+          </ol>
+          <aside>
+            <!--semantic element-->
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> I code per day.
+              </summary>
+              <p>
+                I start at <time datetime="08:00"> 8 am </time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning
+              </p>
+            </details>
+          </aside>
+
+          <br />
+          <table>
+            <caption>
+              My Daily schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <!--empty cell/square -->
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">morning</th>
+                <td>
+                  <time datetime="08:00"> 8 am</time>-<time datetime="11:00">
+                    11am
+                  </time>
+                </td>
+                <td>Write code</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11 am</time>-<time datetime="12:00"
+                    >12pm</time
+                  >
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12pm</time>-<time datetime="17:00"
+                    >5pm</time
+                  >
+                </td>
+                <td>Study for other courses</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All other times</td>
+                <td colspan="1">Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  And that's what I do everyday, 5 days a week. Just east,
+                  sleep, code ...and recharge!
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
+
+      <hr />
+
+      <article id="vacation">
+        <h2>I am also planning a vacation</h2>
+
+        <p>I've been working hard and <em>really need a gataway.</em></p>
+        <p>
+          I live in <abbr title="Kansas">KS</abbr> so I wan to visit a beach.
+        </p>
+        <section>
+          <h3>Places I'd like to visit</h3>
+          <ul>
+            <!--Unordered list-->
+            <li>
+              <!--list-->
+              <p>I've heard good things about the Caribbean</p>
+              <figure>
+                <img
+                  src="img/seychelles.jpeg"
+                  alt="Has carrebean Vibes"
+                  title="I am learning how to add iimages on HTML5"
+                  width="232"
+                  height="180"
+                  loading="lazy"
+                />
+                <!-- 232 x 180 >the first number is the width-->
+                <!--loading (eager/lazy)-->
+                <figcaption>Seychelles Island gataway</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>
+                127 A willson RD <br />
+                Fountain Hill <br />
+                Arkansas, 71642, United States
+              </address>
+              <figure>
+                <img
+                  src="img/malindi.jpeg"
+                  alt="Fountain Hill"
+                  title="It's 5 o'clock Somewhere!"
+                  width="474"
+                  height="266"
+                  loading="lazy"
+                />
+                <figcaption>Fountain Hill</figcaption>
+              </figure>
+            </li>
+          </ul>
+
+          <p>Lists of places I want to go</p>
+          <ol>
+            <!--Ordered list element-->
+            <li>Seychelles</li>
+            <li>Madagascar</li>
+            <li>Mauritius</li>
+            <li>Malindi</li>
+          </ol>
+        </section>
+
+        <hr />
+
+        <section>
+          <div></div>
+          <!--divider-->
+          <span></span
+          ><!--used mostly in css-->
+          <!--To read more later on assistive technologies-->
+          <h3>Places I'd like to avoid</h3>
+          <p>No cold places. <strong>No way!</strong></p>
+          <dl>
+            <!--description list-->
+            <dt>North pole</dt>
+            <!--description term-->
+            <dd>I hear this is <strong>cold</strong>!</dd>
+            <!--description details-->
+
+            <dt>South Pole</dt>
+            <dd>This is also <strong>cold</strong>!</dd>
+
+            <dt>Mountain tops</dt>
+            <dd>These are also <strong>cold</strong>!</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
+
+    <hr />
+    <footer>
+      <p>
+        &lt; &lt; &lt;&copy; <a href="about.html">Ruth Iguta</a> &gt;&gt;&gt;
+      </p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+  </body>
+</html>
+
+<!--anchor tag-->
